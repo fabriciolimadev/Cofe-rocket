@@ -1,0 +1,94 @@
+@media screen and (max-width: 900px) {
+  body {
+    background-image: url(../images/blur-mobile.png);
+    background-position: bottom;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  .bg-1,
+  .bg-2 {
+    display: none;
+  }
+  .content-md {
+    display: flex;
+  }
+  .cofee-sm {
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    object-position: bottom;
+    object-fit: cover;
+  }
+  .title,
+  .sub-title {
+    font-size: 50px;
+  }
+  .menu-sm {
+    display: none;
+  }
+  .menu-sm ~ .btn-join-coffe {
+    display: none;
+  }
+  .logo-sm {
+    display: none;
+  }
+  .logo-md {
+    display: block;
+  }
+  .hamburguer {
+    display: block;
+    cursor: pointer;
+    padding: 20px;
+  }
+  .container {
+    max-width: 100vw;
+  }
+  .header {
+    padding: 27px 0;
+    border-bottom: 1px solid #29292e;
+  }
+  .menu-md {
+    position: fixed;
+    top: 115px;
+    left: 100%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+    background-color: var(--backgrond);
+    z-index: 2;
+  }
+  .item-menu-md {
+    min-height: 56px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #29292e;
+    justify-content: center;
+  }
+  .link-menu-md {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    font-size: 18px;
+    color: #a8a8b3;
+  }
+  .link-menu-md:hover {
+    border-left: 3px solid var(--button);
+    color: #e1e1e6;
+    font-weight: 700;
+  }
+  .menu-md.active {
+    left: 0;
+  }
+}
+@media screen and (max-width: 374px) {
+  .cofee-sm {
+    width: 100%;
+  }
+}
